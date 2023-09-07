@@ -1,5 +1,8 @@
 FROM php:7.4-fpm
 
+ARG GITHUB_EMAIL
+ARG GITHUB_NAME
+
 RUN apt update \
     && apt install -y zlib1g-dev g++ git libicu-dev zip libzip-dev zip libpng-dev \
     && docker-php-ext-install intl opcache pdo pdo_mysql \
