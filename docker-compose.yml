@@ -20,6 +20,9 @@ services:
         container_name: php
         build:
           context: ./php
+          args:
+              GITHUB_EMAIL: ${GITHUB_EMAIL}
+              GITHUB_NAME: ${GITHUB_NAME}
         ports:
           - '9000:8000'
         volumes:
