@@ -24,7 +24,7 @@ services:
               GITHUB_EMAIL: ${GITHUB_EMAIL}
               GITHUB_NAME: ${GITHUB_NAME}
         ports:
-          - '9000:8000'
+          - '9000:9000'
         volumes:
           - ./../apps:/var/www/symfony_docker
         depends_on:
