@@ -23,7 +23,7 @@ services:
         ports:
           - '9000:8000'
         volumes:
-          - ./apps:/var/www/symfony_docker
+          - ./../apps:/var/www/symfony_docker
         depends_on:
           - database
         networks:
